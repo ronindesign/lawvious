@@ -1,0 +1,44 @@
+/* --------------------------------------------------
+
+  Old Twitter Background sprites
+  Icon sprites
+
+*/
+
+/* Icons
+-------------------------------------------------- */
+/* The <i> tag is reserved for icons leveraging the primary web sprite.
+ * To create a new icon, edit the sprite PSD and export the flattened
+ * PNG to the img directory. From there, add a new class below and give
+ * it a width, height, and background-position. Your HTML for the icon
+ * will then look like <i class="new-class"></i>.
+ */
+i,
+.icon {
+  display: inline-block;
+  vertical-align: text-top;
+  background-image: url(../images/twitter_web_sprite_icons.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* Twitter logos
+------------------------- */
+/* Stream end bird */
+.bird-etched                      { width: 34px; height: 26px; }
+
+/* Topbar birds */
+.bird-topbar-etched,
+.bird-topbar-blue,
+.bird-topbar-white                { width: 24px; height: 21px; }
+.bird-topbar-etched               { background-position: -40px  0; }
+.bird-topbar-blue                 { background-position: -80px  0; }
+
+/* Non-app topbar */
+/* Extra styles here for the blue corpbar since we only import this file into that old Rails layout */
+.bird-corpbar,
+.bird-topbar-phx                  { float: left; padding: 7px 20px 9px; }
+.bird-corpbar:hover,
+.bird-topbar-phx:hover            { background-color: rgba(255,255,255,.1); }
+/* White bird itself */
+.bird-topbar-white                { background-position: -120px 0; }
